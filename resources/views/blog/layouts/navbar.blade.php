@@ -9,7 +9,7 @@
                 <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('profile') }}">Profile</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('portal') }}">Portal</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('admin.dashboard-analytics') }}">Login
+                <li class="nav-item"><a class="nav-link" href="{{ route('admin.home') }}">Login
                         Admin</a>
                 </li>
             </ul>
