@@ -44,7 +44,7 @@
                                 <label class="col-sm-2 col-form-label" for="preview_photo">Preview Photo Before</label>
                                 <div class="col-sm-10">
                                     @if ($portal->photo)
-                                        <img src="{{ asset('storage/photos/' . $portal->photo) }}" alt="Photo Preview"
+                                        <img src="{{ asset('blog/photo/' . $portal->photo) }}" alt="Photo Preview"
                                             class="mt-2" style="max-width: 200px;">
                                     @else
                                         <input type="text" id="preview_photo" value="Tidak ada photo"

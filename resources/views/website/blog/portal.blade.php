@@ -25,7 +25,7 @@
                                     </div>
                                     <div class="col-lg-2 text-center text-lg-start mb-4 mb-lg-0">
                                         <div class="bg-light p-2 rounded-4">
-                                            <img src="{{ asset('storage/photos/' . $portal->photo) }}" alt=""
+                                            <img src="{{ asset('blog/photo/' . $portal->photo) }}" alt=""
                                                 class="img-fluid rounded-4">
                                         </div>
                                     </div>

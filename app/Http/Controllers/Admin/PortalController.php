@@ -38,11 +38,11 @@ class PortalController extends Controller
     {
         if ($request->hasFile('photo')) {
             $imageName = time().'.'.$request->photo->extension();
-            $request->photo->storeAs('photos', $imageName);
+            $request->photo->move(public_path('blog/photo'), $imageName);
         } else {
             $imageName = null;
         }
-
+        
         $portal = Portal::create([
             'uuid' => Uuid::uuid4()->toString(),
             'title' => $request->title,

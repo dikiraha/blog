@@ -46,7 +46,7 @@
 
     <ul class="menu-inner py-1">
         <!-- Dashboards -->
-        <li class="menu-item">
+        <li class="menu-item {{ Route::currentRouteName() === 'admin.home' ? 'active' : '' }}">
             <a href="{{ route('admin.home') }}" class="menu-link">
                 <i class="menu-icon tf-icons mdi mdi-home-outline"></i>
                 <div data-i18n="Basic">Dashboard</div>
@@ -58,15 +58,13 @@
             <span class="menu-header-text">Apps &amp; Pages</span>
         </li>
         <!-- Apps -->
-        <li class="menu-item">
+        <li
+            class="menu-item {{ in_array(Route::currentRouteName(), ['admin.portal.list', 'admin.portal.create', 'admin.portal.edit']) ? 'active' : '' }}">
             <a href="{{ route('admin.portal.list') }}" class="menu-link">
                 <i class="menu-icon tf-icons mdi mdi-newspaper"></i>
                 <div data-i18n="Basic">Portal</div>
             </a>
         </li>
-
-
-
 
         <!-- Forms & Tables -->
         <li class="menu-header fw-medium mt-4"><span class="menu-header-text">Master</span>
@@ -74,7 +72,8 @@
         <!-- Forms -->
 
         <!-- Tables -->
-        <li class="menu-item">
+        <li
+            class="menu-item {{ in_array(Route::currentRouteName(), ['admin.user.list', 'admin.user.create', 'admin.user.edit']) ? 'active' : '' }}">
             <a href="{{ route('admin.user.list') }}" class="menu-link">
                 <i class="menu-icon tf-icons mdi mdi-account-group"></i>
                 <div data-i18n="Tables">Users</div>

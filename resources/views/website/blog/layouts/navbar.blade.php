@@ -9,6 +9,8 @@
                 <li class="nav-item"><a class="nav-link" href="{{ route('website.home') }}">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('website.profile') }}">Profile</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('website.portal') }}">Portal</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.ubpkarawang.ac.id" target="_blank">UBP
+                        Karawang</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('admin.home') }}">Login
                         Admin</a>
                 </li>
