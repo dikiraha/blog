@@ -319,6 +319,21 @@
     <section class="bg-light py-5">
         <div class="container px-5">
             <div class="row gx-5 justify-content-center">
+                <div class="col-xxl-12">
+                    <div class="text-center my-5">
+                        <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Tugas Basis Data</span>
+                        </h2>
+                        <p class="lead fw-light mb-4">Membuat ERD</p>
+                        <img class="profile-img" width="100%" src="{{ asset('blog/assets/ERD.png') }}" alt="..." />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
                 <div class="col-xxl-8">
                     <div class="text-center my-5">
                         <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Tentang Saya</span>

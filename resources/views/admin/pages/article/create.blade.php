@@ -52,7 +52,7 @@
 @endpush
 
 @push('scripts')
-    <script src="https://cdn.tiny.cloud/1/sz1oi6o8pq1cfgze3fc0htsn882dirr9kgsabr33bapngybz/tinymce/7/tinymce.min.js"
+    {{-- <script src="https://cdn.tiny.cloud/1/sz1oi6o8pq1cfgze3fc0htsn882dirr9kgsabr33bapngybz/tinymce/7/tinymce.min.js"
         referrerpolicy="origin"></script>
 
     <script>
@@ -74,5 +74,5 @@
             ai_request: (request, respondWith) => respondWith.string(() => Promise.reject(
                 "See docs to implement AI Assistant")),
         });
-    </script>
+    </script> --}}
 @endpush
