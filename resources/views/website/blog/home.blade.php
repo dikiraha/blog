@@ -316,7 +316,7 @@
         </div>
     </header>
     <!-- About Section-->
-    <section class="bg-light py-5">
+    <section class="bg-light py-5" style="background-color: rgb(241, 241, 241) !important">
         <div class="container px-5">
             <div class="row gx-5 justify-content-center">
                 <div class="col-xxl-12">
@@ -324,7 +324,30 @@
                         <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Tugas Basis Data</span>
                         </h2>
                         <p class="lead fw-light mb-4">Membuat ERD</p>
-                        <img class="profile-img" width="100%" src="{{ asset('blog/assets/ERD.png') }}" alt="..." />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="img-1">PERTEMUAN 2</label>
+                                <img class="profile-img" id="img-1" width="100%"
+                                    src="{{ asset('blog/assets/ERD.png') }}" alt="..." />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="img-2">PERTEMUAN 3</label>
+                                <img class="profile-img" id="img-2" width="100%"
+                                    src="{{ asset('blog/assets/ERD_3.png') }}" alt="..." />
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <label for="img-1">PERTEMUAN 4</label>
+                                <img class="profile-img" id="img-3" width="100%"
+                                    src="{{ asset('blog/assets/ERD_4.png') }}" alt="..." />
+                            </div>
+                            {{-- <div class="col-md-6">
+                                <label for="img-2">PERTEMUAN 3</label>
+                                <img class="profile-img" id="img-2" width="100%"
+                                    src="{{ asset('blog/assets/ERD_3.png') }}" alt="..." />
+                            </div> --}}
+                        </div>
                     </div>
                 </div>
             </div>

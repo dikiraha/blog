@@ -33,7 +33,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row mb-3">
+                            {{-- <div class="row mb-3">
                                 <label class="col-sm-2 col-form-label" for="photo">Photo</label>
                                 <div class="col-sm-10">
                                     <input type="file" id="photo" name="photo" class="form-control"
@@ -51,7 +51,7 @@
                                             class="form-control" disabled>
                                     @endif
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="row justify-content-end">
                                 <div class="col-sm-10">
                                     <button type="submit" class="btn btn-success">

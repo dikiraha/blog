@@ -25,7 +25,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-12 mt-3">
-                                        <div>{{ $article->description }}</div>
+                                        <textarea class="form-control-plaintext" id="description" readonly>{{ $article->description }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -37,3 +37,24 @@
         </div>
     </div>
 @endsection
+
+@push('scripts')
+    <script>
+        // Function to auto resize the textarea
+        function autoResizeTextarea(textarea) {
+            textarea.style.height = 'auto'; // Reset height
+            textarea.style.height = textarea.scrollHeight + 'px'; // Set new height based on scrollHeight
+        }
+
+        // Select the textarea element
+        var descriptionTextarea = document.getElementById('description');
+
+        // Call the function initially to adjust the height
+        autoResizeTextarea(descriptionTextarea);
+
+        // Optionally, if you allow editing, you can add event listeners:
+        descriptionTextarea.addEventListener('input', function() {
+            autoResizeTextarea(descriptionTextarea);
+        });
+    </script>
+@endpush
