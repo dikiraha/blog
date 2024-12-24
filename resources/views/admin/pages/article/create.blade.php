@@ -29,7 +29,7 @@
                                 <label class="col-sm-2 col-form-label" for="description">Description</label>
                                 <div class="col-sm-10">
                                     <div class="input-group input-group-merge">
-                                        <textarea name="description" id="description" class="form-control editor" rows="10" required></textarea>
+                                        <textarea name="description" id="description" class="form-control editor" rows="10"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -58,8 +58,8 @@
     <script>
         tinymce.init({
             selector: 'textarea',
-            plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage advtemplate ai mentions tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss markdown',
-            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+            plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
             tinycomments_mode: 'embedded',
             tinycomments_author: 'Author name',
             mergetags_list: [{
@@ -75,4 +75,14 @@
                 "See docs to implement AI Assistant")),
         });
     </script> --}}
+
+    <script src="https://cdn.tiny.cloud/1/sz1oi6o8pq1cfgze3fc0htsn882dirr9kgsabr33bapngybz/tinymce/7/tinymce.min.js"
+        referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea#description', // Replace this CSS selector to match the placeholder element for TinyMCE
+            plugins: 'code table lists',
+            toolbar: 'undo redo | blocks | bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table'
+        });
+    </script>
 @endpush

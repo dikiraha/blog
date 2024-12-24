@@ -25,7 +25,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-12 mt-3">
-                                        <textarea class="form-control-plaintext" id="description" readonly>{{ $article->description }}</textarea>
+                                        <div class="form-control-plaintext" id="description">{!! $article->description !!}</div>
                                     </div>
                                 </div>
                             </div>
@@ -55,6 +55,33 @@
         // Optionally, if you allow editing, you can add event listeners:
         descriptionTextarea.addEventListener('input', function() {
             autoResizeTextarea(descriptionTextarea);
+        });
+    </script>
+
+    <script src="https://cdn.tiny.cloud/1/sz1oi6o8pq1cfgze3fc0htsn882dirr9kgsabr33bapngybz/tinymce/7/tinymce.min.js"
+        referrerpolicy="origin"></script>
+
+    <script>
+        tinymce.init({
+            selector: 'textarea', // Target textarea
+            plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+            tinycomments_mode: 'embedded',
+            tinycomments_author: 'Author name',
+            mergetags_list: [{
+                    value: 'First.Name',
+                    title: 'First Name'
+                },
+                {
+                    value: 'Email',
+                    title: 'Email'
+                }
+            ],
+            ai_request: (request, respondWith) => respondWith.string(() => Promise.reject(
+                "See docs to implement AI Assistant")),
+            forced_root_block: 'p', // Ensure every new line is wrapped in <p>
+            force_p_newlines: true, // Force new lines into paragraphs
+            remove_trailing_brs: false // Prevent removing <br> tags at the end
         });
     </script>
 @endpush
