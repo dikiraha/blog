@@ -342,10 +342,22 @@
                                 <img class="profile-img" id="img-3" width="100%"
                                     src="{{ asset('blog/assets/ERD_4.png') }}" alt="..." />
                             </div>
-                            {{-- <div class="col-md-6">
-                                <label for="img-2">PERTEMUAN 3</label>
+                            <div class="col-md-6">
+                                <label for="img-2">NORMALISASI</label>
                                 <img class="profile-img" id="img-2" width="100%"
-                                    src="{{ asset('blog/assets/ERD_3.png') }}" alt="..." />
+                                    src="{{ asset('blog/assets/NORMALISASI.png') }}" alt="..." />
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <label for="img-1">DENORMALISASI</label>
+                                <img class="profile-img" id="img-3" width="100%"
+                                    src="{{ asset('blog/assets/DENORMALISASI.png') }}" alt="..." />
+                            </div>
+                            {{-- <div class="col-md-6">
+                                <label for="img-2">NORMALISASI</label>
+                                <img class="profile-img" id="img-2" width="100%"
+                                    src="{{ asset('blog/assets/NORMALISASI.png') }}" alt="..." />
                             </div> --}}
                         </div>
                     </div>
